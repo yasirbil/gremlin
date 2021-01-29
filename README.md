@@ -47,18 +47,22 @@ helm install gremlin \
 
 
 1. In your kubernetes cluster, create a sample deployment in default namespace
+
 	```vim sample-deployment.yaml```
+	
 	```kubectl create -f sample-deployment.yaml```
+	
 	```kubectl get pods```
 
 2. Autoscale your deployment similar to these criteria
+
 	```kubectl autoscale deployment nginx-deployment --cpu-percent=75 --min=1 --max=10```
 
 3. From your gremlin console navigate to attack tab
 
 click "New attack" > kubernetes > choose your cluster > default namespace > click deployments and choose sample-deployment > click “choose a gremlin” > resource > CPU > choose length in seconds > CPU capacity( %90 for example) > exact container: name of the container >> unleash gremlin
 
-4. Go to cluster terminal and run “kubectl get pods” to see whether the pod numbers increasing
+4. Go to cluster terminal and run ```kubectl get pods``` to see whether the pod numbers increasing
 
 
 For more detailed instructions, see the chart's documentation [here](https://github.com/gremlin/helm/blob/master/gremlin/README.md).
