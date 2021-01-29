@@ -8,28 +8,29 @@ Get the latest [Helm release](https://github.com/kubernetes/helm#install).
 
 ## Install Charts
 
-Pre-requisites
+**Pre-requisites**
 Description: Gremlin is a test tool for performance testing in stage environment
 
-Navigate to Gremlin.com and set up a new account
+1. Navigate to Gremlin.com and set up a new account
 
-Create a team
+2. Create a team
 
-Get team ID and generate Secret ID
+3. Get team ID and generate Secret ID
 
-Navigate to your GCP and create a new cluster with only two nodes. (Free version only allows two nodes. More than two nodes will be charged by Gremlin.)
+4. Navigate to your GCP and create a new cluster with only two nodes. (Free version only allows two nodes. More than two nodes will be charged by Gremlin.)
 
-In your new cluster terminal generate kube-config
+5. In your new cluster terminal generate kube-config
 
-Create gremlin namespace 
+6. Create gremlin namespace 
 
 ```kubectl namespace -n gremlin```
 
+7. Clone this repo
 ```git clone git@github.com:yasirbil/gremlin.git```
 
 ```cd /gremlin```
 
-Run this command:
+8. Run this command:
 
 ```
 helm install gremlin \
