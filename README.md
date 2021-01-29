@@ -8,8 +8,9 @@ Get the latest [Helm release](https://github.com/kubernetes/helm#install).
 
 ## Install Charts
 
-**Pre-requisites**
 Description: Gremlin is a test tool for performance testing in stage environment
+
+**Pre-requisites**
 
 1. Navigate to Gremlin.com and set up a new account
 
