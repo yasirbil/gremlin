@@ -23,12 +23,13 @@ Description: Gremlin is a test tool for performance testing in stage environment
 
 6. Create gremlin namespace 
 
-```kubectl namespace -n gremlin```
+	```kubectl namespace -n gremlin```
 
 7. Clone this repo
-```git clone git@github.com:yasirbil/gremlin.git```
 
-```cd /gremlin```
+	```git clone git@github.com:yasirbil/gremlin.git```
+
+	```cd /gremlin```
 
 8. Run this command:
 
